@@ -1,0 +1,17 @@
+package com.HospitalManagement.responsedto;
+
+import java.time.LocalDateTime;
+
+public record LabResultResponseDto(
+        Long resultId,
+        Long labOrderId,
+        String testCode,
+        String value,
+        String units,
+        String referenceRangeJson,
+        String flag,
+        LocalDateTime reportedAt,
+        Long reportedById,
+        String reportedByName
+) {
+}
